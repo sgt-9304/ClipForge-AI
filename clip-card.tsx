@@ -1,0 +1,1 @@
+import {VideoPreview} from "./video-preview";export function ClipCard({clip}:{clip:any}){return <article className="card"><VideoPreview src={clip.url}/><h3>{clip.title}</h3><span className="pill">Editorial score {clip.predictedEngagementScore}</span><p>{clip.reason}</p><p className="muted">Pending human review</p></article>}

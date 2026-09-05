@@ -1,0 +1,1 @@
+import {describe,it,expect} from "vitest";import {cues,toSrt} from "../lib/captions";describe("captions",()=>{it("creates timed cues",()=>{const x=cues([{word:"hello",start:0,end:.4},{word:"world",start:.5,end:1}],6);expect(x[0].text).toBe("hello world");expect(toSrt(x)).toContain("00:00:00,000")})});

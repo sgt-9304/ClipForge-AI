@@ -1,0 +1,1 @@
+import {describe,it,expect} from "vitest";import {engagementScore} from "../lib/scoring";describe("score",()=>{it("applies penalties",()=>{const base={hook:80,clarity:80,specificity:80,value:80,novelty:80,pacing:80,captionReadability:80,ending:80,contextPenalty:0,riskPenalty:0};expect(engagementScore({...base,riskPenalty:20})).toBeLessThan(engagementScore(base))})});

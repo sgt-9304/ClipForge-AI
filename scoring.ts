@@ -1,0 +1,1 @@
+import type {ClipScores} from "./types";export function engagementScore(s:ClipScores){const positive=.2*s.hook+.15*s.clarity+.15*s.specificity+.15*s.value+.1*s.novelty+.1*s.pacing+.1*s.captionReadability+.05*s.ending;return Math.max(0,Math.min(100,Math.round(positive-s.contextPenalty-s.riskPenalty)))}

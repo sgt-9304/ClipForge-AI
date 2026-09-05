@@ -1,0 +1,1 @@
+export function UploadForm(){return <form className="card" action="/api/upload" method="post" encType="multipart/form-data"><input type="file" name="media" accept="video/*,audio/*"/><label><input type="checkbox" name="rightsConfirmed" value="true"/> I confirm rights and consent.</label><button className="button">Upload</button></form>}
